@@ -312,7 +312,7 @@ padding: 67px 0;
 }
 .oponions-section:nth-child(1){
 left: 0;
-top: 50px;
+top: 0px;
 }
 .oponions-section:nth-child(3){
 right: 0;
@@ -326,6 +326,7 @@ top: 0;
 margin-right: 12px;
 margin-top: 30px;
 }
+
 .oponions-section_text>span{
   float: left;
   margin-left: 59px;
@@ -334,11 +335,11 @@ margin-top: 30px;
   float: left;
 }
 .star{
- 
   margin-bottom: 47px;
 }
 .oponion-position{
   position: relative;
+  overflow: hidden;
 }
 
 
