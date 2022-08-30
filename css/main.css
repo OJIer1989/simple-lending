@@ -7,6 +7,11 @@
 *::before{
   box-sizing: border-box;
 }
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
 body{
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -26,10 +31,6 @@ a{
   height: 91px;
   max-width: 1512px;
     margin: 0 auto;
-}
-.iphone-container{
-max-width: 1100px;
-margin: 0 auto;
 }
 .container {
   max-width: 1262px;
@@ -85,12 +86,9 @@ margin-left: 12px;
 
 }
 .text{
-vertical-align: top;
-margin-top: 100px;
-margin-right: 63px;
-}
-.img{
-  width: 420px;
+  vertical-align: top;
+  margin-top: 100px;
+  margin-right: 63px;
 }
 .header-text{
   font-size: 47px;
@@ -114,9 +112,9 @@ margin-right: 63px;
   background: #0062FF;
   color: #fff;
   border: none;
- margin-right: 24px;
- font-weight: 400;
- margin-left: 0;
+  margin-right: 24px;
+  font-weight: 400;
+  margin-left: 0;
 }
 
 .btn-check{
@@ -124,11 +122,11 @@ margin-right: 63px;
   border: 1px solid #575757;
 }
 .btn-check:hover{
-    background-color: #575757;
-      color: #fff;
-      border-radius: none;
-      transition: all 0.7s ease;
-      padding: 10px 25px;
+  background-color: #575757;
+  color: #fff;
+  border-radius: none;
+  transition: all 0.7s ease;
+  padding: 10px 25px;
 }
 .card-mark{
   margin-bottom: 110px;
@@ -137,8 +135,8 @@ margin-right: 63px;
   text-align: center;
 }
 .authors-info{
-display: inline-block;
-max-width: 611px;
+  display: inline-block;
+  max-width: 611px;
 }
 .authors-text{
   font-size: 36px;
@@ -161,10 +159,10 @@ max-width: 611px;
   font-weight: 600;
 }
 .mark{
-color: #575757;
-font-size: 21px;
-line-height: 32px;
-margin-bottom: 12px;
+  color: #575757;
+  font-size: 21px;
+  line-height: 32px;
+    margin-bottom: 12px;
 }
 .authors-info>span{
   display: block;
@@ -182,28 +180,31 @@ margin-bottom: 12px;
   vertical-align: super;
   position: relative;
 }
-
+.paragraph{
+  color: #DEA405;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.prof {
+  color: #FFBE0B;
+  font-size: 16px;
+  line-height: 19px; 
+}
 .after-before{
   vertical-align: middle;
 }
 .after-before::before{
-content: "";
-  position: absolute;
-  height: 44px;
-  top: 0;
-  left: 0;
-  width: 205px;
-  background-image: url(../images/before.png);
-}
-.after-before::after{
   content: "";
   position: absolute;
-  background-image: url(../images/after.png);
-  width: 167px;
-  height: 44px;
-  bottom: 8px;
-  left: 0;
+  width: 10px;
+  height: 15px;
+  top: 80px;
+  left: -18px;
+  background-image: url(../images/arrow.svg);
+ 
 }
+
 .for_who{
   background-color: #0062FF;
   color: #fff;
@@ -235,6 +236,9 @@ content: "";
 .for-who_section:nth-child(3){
   margin-right: 48px;
 }
+.for-who_section>img{
+  border-radius: 20%;
+}
 
 .for-who_text{
   display: inline-block;
@@ -244,19 +248,25 @@ content: "";
   margin-top: 14px;
 }
 .for-who_text>h3{
-font-size: 27px;
-line-height: 32px;
-margin-bottom: 8px;
+  font-size: 27px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 .who-btn{
   text-align: center;
 }
 .for-who_btn{
   color: #2203E4;
-padding: 10px 16px;
-border: 1px solid #2203E4;
-background-color: #fff;
-margin-top: 24px;
+  padding: 10px 16px;
+  border: 1px solid #2203E4;
+  background-color: #fff;
+  margin-top: 24px;
+}
+.for-who_btn:hover{
+  padding: 10px 25px;
+  background-color: black;
+  color: #fff;
+  border: none;
 }
 .demo{
   padding: 63px 0 130px 0;
@@ -279,6 +289,60 @@ padding-bottom: 22px;
 .video{
   display: inline-block;
 }
+.oponions{
+background-color: #FFBE0B;
+padding: 67px 0;
+}
+.oponions-top{
+  text-align: center;
+}
+.oponions-section{
+  padding: 59px 30px 59px 16px;
+  background: #F3F3F3;
+  display: table-cell;
+  margin: 0 32px;
+  box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+ margin: 0 auto;
+}
+.oponions-section:nth-child(1),
+.oponions-section:nth-child(3){
+  position: absolute;
+  color: rgba(87, 87, 87, 0.35);
+}
+.oponions-section:nth-child(1){
+left: 0;
+top: 50px;
+}
+.oponions-section:nth-child(3){
+right: 0;
+top: 0;
+}
+.oponions-section_span {
+  color: black;
+}
+.oponions-section_text>img{
+  float: left;
+margin-right: 12px;
+margin-top: 30px;
+}
+.oponions-section_text>span{
+  float: left;
+  margin-left: 59px;
+}
+.jones-david{
+  float: left;
+}
+.star{
+ 
+  margin-bottom: 47px;
+}
+.oponion-position{
+  position: relative;
+}
+
+
+
 
 
 
