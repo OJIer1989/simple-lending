@@ -349,22 +349,62 @@ max-width: 702px;
 .footer-header{
   text-align: center;
 }
-.footer-card{
-  padding: 0 158px;
+.card{
+  margin: 80px auto;
 }
-.float{
-  width: 601px;
+.card-text{
+  margin-top: 67px;
 }
-.footer-star>.star{
+.card-info{
+  float: right;
+  width: 611px;
+}
+.card-text>.star{
   float: left;
- margin-bottom: 16px;
+  display: contents;
 }
-.footer-img{
-float: left;
+.card-text>button{
+  cursor: pointer;
 }
-.span-card{
-  float: left;
+.my-product{
+ margin: 16px 0;
+  color: #2203E4;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
 }
+.footer-discount{
+  padding: 97px 384px 113px 384px;
+  text-align: center;
+}
+.discount-text{
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.input-email,
+.input-btn{
+ width: 508px; 
+}
+.input-email{
+  background: rgba(58, 134, 255, 0.2);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 25px 25px;
+  margin-bottom: 14px;
+}
+.input-email::placeholder{
+  color: #2203E4;
+}
+.input-btn{
+  padding: 10px 0;
+background-color: #0062FF;
+color: #fff;
+cursor: pointer;
+}
+
 
 
 
