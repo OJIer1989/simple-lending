@@ -296,10 +296,14 @@ padding: 67px 0;
 .oponions-top{
   text-align: center;
 }
+.oponions-block{
+  position: relative;
+overflow: hidden;
+}
 .oponions-section{
   padding: 59px 30px 59px 16px;
   background: #F3F3F3;
-  display: table-cell;
+max-width: 702px;
   margin: 0 32px;
   box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
@@ -309,14 +313,15 @@ padding: 67px 0;
 .oponions-section:nth-child(3){
   position: absolute;
   color: rgba(87, 87, 87, 0.35);
+  box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
+  background: rgba(243, 243, 243, 0.4);
+  top: 0;
 }
 .oponions-section:nth-child(1){
-left: 0;
-top: 0px;
+left: -445px;
 }
 .oponions-section:nth-child(3){
-right: 0;
-top: 0;
+right: -445px;
 }
 .oponions-section_span {
   color: black;
@@ -338,8 +343,27 @@ margin-top: 30px;
   margin-bottom: 47px;
 }
 .oponion-position{
-  position: relative;
+max-width: 702px;
   overflow: hidden;
+}
+.footer-header{
+  text-align: center;
+}
+.footer-card{
+  padding: 0 158px;
+}
+.float{
+  width: 601px;
+}
+.footer-star>.star{
+  float: left;
+ margin-bottom: 16px;
+}
+.footer-img{
+float: left;
+}
+.span-card{
+  float: left;
 }
 
 
